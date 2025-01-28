@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Counter Project</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+    <style>
+      body,html{
+        margin: 0;
+        padding: 0;
+        height: 100%;
+      }
+      h2{
+        font-size: 300%;
+        text-align: center;
+        font-style: italic;
+      }
+      .container{
+        background-color: rgba(26, 182, 96, 0.56);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+      }
+      .box{
+        background-color: rgb(141, 168, 174);
+       text-align: center;
+       padding: 20px 100px;
+       border-radius: 20px;
+    
+      }
+      p{
+        font-size: 400%;
+        text-align: center;
+      }
+      button{
+        background-color: rgba(127, 255, 212, 0);
+        padding: 20px 50px;
+        border-radius: 20px;
+      }
+      button:hover{
+        background-color: rgb(180, 99, 14);
+      }
+      
+      
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div>
+<h2  > Count Guyssss....</h2>
+<p id="text">Start</p>
+<button onclick="decr()">Decrement</button>
+<button onclick="incr()">Increment</button>
+<button onclick="res()">Reset</button>
+      </div>
+    </div>
+    
+    <script>
+      let Counter=0;
+      function incr(){
+        document.getElementById("text").innerHTML= ++Counter;
+      }
+      function decr(){
+        document.getElementById("text").innerHTML= --Counter;
+      }
+      function res(){
+        document.getElementById("text").innerHTML= 0;
+        counter=0;
+      }
+    </script>
+  </body>
+</html>
